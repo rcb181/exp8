@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Copy Jar File
+      copy:
+        src: /var/lib/jenkins/workspace/myapp-pipeline/target/myapp-1.0-SNAPSHOT.jar
+        dest: /home/belfort/test.jar
